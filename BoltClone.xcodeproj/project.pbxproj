@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6950245F2D186E7E00EEF1EF /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 6950245E2D186E7E00EEF1EF /* GoogleMaps */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		695024412D186C1C00EEF1EF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -35,16 +39,6 @@
 			path = BoltClone;
 			sourceTree = "<group>";
 		};
-		695024432D186C1C00EEF1EF /* BoltCloneTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BoltCloneTests;
-			sourceTree = "<group>";
-		};
-		6950244D2D186C1C00EEF1EF /* BoltCloneUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BoltCloneUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6950245F2D186E7E00EEF1EF /* GoogleMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				695024322D186C1A00EEF1EF /* BoltClone */,
-				695024432D186C1C00EEF1EF /* BoltCloneTests */,
-				6950244D2D186C1C00EEF1EF /* BoltCloneUITests */,
 				695024312D186C1A00EEF1EF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +105,7 @@
 			);
 			name = BoltClone;
 			packageProductDependencies = (
+				6950245E2D186E7E00EEF1EF /* GoogleMaps */,
 			);
 			productName = BoltClone;
 			productReference = 695024302D186C1A00EEF1EF /* BoltClone.app */;
@@ -129,9 +123,6 @@
 			);
 			dependencies = (
 				695024422D186C1C00EEF1EF /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				695024432D186C1C00EEF1EF /* BoltCloneTests */,
 			);
 			name = BoltCloneTests;
 			packageProductDependencies = (
@@ -152,9 +143,6 @@
 			);
 			dependencies = (
 				6950244C2D186C1C00EEF1EF /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				6950244D2D186C1C00EEF1EF /* BoltCloneUITests */,
 			);
 			name = BoltCloneUITests;
 			packageProductDependencies = (
@@ -195,6 +183,9 @@
 			);
 			mainGroup = 695024272D186C1A00EEF1EF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6950245D2D186E7E00EEF1EF /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 695024312D186C1A00EEF1EF /* Products */;
 			projectDirPath = "";
@@ -558,6 +549,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6950245D2D186E7E00EEF1EF /* XCRemoteSwiftPackageReference "ios-maps-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-maps-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6950245E2D186E7E00EEF1EF /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6950245D2D186E7E00EEF1EF /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
+			productName = GoogleMaps;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 695024282D186C1A00EEF1EF /* Project object */;
 }
