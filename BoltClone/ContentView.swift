@@ -12,6 +12,8 @@ struct ContentView: View {
         GoogleMapsView()
             .ignoresSafeArea()
         
+    
+        
     }
 }
 

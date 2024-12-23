@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6950245F2D186E7E00EEF1EF /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 6950245E2D186E7E00EEF1EF /* GoogleMaps */; };
+		69CA88472D18777400C19E4D /* GooglePlaces in Frameworks */ = {isa = PBXBuildFile; productRef = 69CA88462D18777400C19E4D /* GooglePlaces */; };
+		69CA88492D18777400C19E4D /* GooglePlacesSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 69CA88482D18777400C19E4D /* GooglePlacesSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6950245F2D186E7E00EEF1EF /* GoogleMaps in Frameworks */,
+				69CA88472D18777400C19E4D /* GooglePlaces in Frameworks */,
+				69CA88492D18777400C19E4D /* GooglePlacesSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +110,8 @@
 			name = BoltClone;
 			packageProductDependencies = (
 				6950245E2D186E7E00EEF1EF /* GoogleMaps */,
+				69CA88462D18777400C19E4D /* GooglePlaces */,
+				69CA88482D18777400C19E4D /* GooglePlacesSwift */,
 			);
 			productName = BoltClone;
 			productReference = 695024302D186C1A00EEF1EF /* BoltClone.app */;
@@ -185,6 +191,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				6950245D2D186E7E00EEF1EF /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
+				69CA88452D18777400C19E4D /* XCRemoteSwiftPackageReference "ios-places-sdk" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 695024312D186C1A00EEF1EF /* Products */;
@@ -390,6 +397,9 @@
 				DEVELOPMENT_TEAM = QCWGH359QH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app need user location to show user location in map.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app need user location to show user location in map.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app need user location to show user location in map.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -419,6 +429,9 @@
 				DEVELOPMENT_TEAM = QCWGH359QH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app need user location to show user location in map.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app need user location to show user location in map.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app need user location to show user location in map.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -559,6 +572,14 @@
 				minimumVersion = 9.2.0;
 			};
 		};
+		69CA88452D18777400C19E4D /* XCRemoteSwiftPackageReference "ios-places-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-places-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -566,6 +587,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6950245D2D186E7E00EEF1EF /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
 			productName = GoogleMaps;
+		};
+		69CA88462D18777400C19E4D /* GooglePlaces */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69CA88452D18777400C19E4D /* XCRemoteSwiftPackageReference "ios-places-sdk" */;
+			productName = GooglePlaces;
+		};
+		69CA88482D18777400C19E4D /* GooglePlacesSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69CA88452D18777400C19E4D /* XCRemoteSwiftPackageReference "ios-places-sdk" */;
+			productName = GooglePlacesSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
