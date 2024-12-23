@@ -6,10 +6,15 @@
 //
 
 import SwiftUI
+import GoogleMaps
 
 @main
 struct BoltCloneApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    let GOOGLE_API_KEY = "AIzaSyChqL7S_xRF3EcLf6ailQ1lK3lGnPRkHlA"
+    
+    init(){
+        GMSServices.provideAPIKey(GOOGLE_API_KEY)
+    }
     
     var body: some Scene {
         WindowGroup {

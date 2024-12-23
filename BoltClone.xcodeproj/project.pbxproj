@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6911AF6C2D19D294002D48EA /* SVGKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6911AF6B2D19D294002D48EA /* SVGKit */; };
+		6911AF6E2D19D294002D48EA /* SVGKitSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6911AF6D2D19D294002D48EA /* SVGKitSwift */; };
 		6950245F2D186E7E00EEF1EF /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 6950245E2D186E7E00EEF1EF /* GoogleMaps */; };
 		69CA88472D18777400C19E4D /* GooglePlaces in Frameworks */ = {isa = PBXBuildFile; productRef = 69CA88462D18777400C19E4D /* GooglePlaces */; };
 		69CA88492D18777400C19E4D /* GooglePlacesSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 69CA88482D18777400C19E4D /* GooglePlacesSwift */; };
@@ -50,6 +52,8 @@
 			files = (
 				6950245F2D186E7E00EEF1EF /* GoogleMaps in Frameworks */,
 				69CA88472D18777400C19E4D /* GooglePlaces in Frameworks */,
+				6911AF6E2D19D294002D48EA /* SVGKitSwift in Frameworks */,
+				6911AF6C2D19D294002D48EA /* SVGKit in Frameworks */,
 				69CA88492D18777400C19E4D /* GooglePlacesSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,6 +116,8 @@
 				6950245E2D186E7E00EEF1EF /* GoogleMaps */,
 				69CA88462D18777400C19E4D /* GooglePlaces */,
 				69CA88482D18777400C19E4D /* GooglePlacesSwift */,
+				6911AF6B2D19D294002D48EA /* SVGKit */,
+				6911AF6D2D19D294002D48EA /* SVGKitSwift */,
 			);
 			productName = BoltClone;
 			productReference = 695024302D186C1A00EEF1EF /* BoltClone.app */;
@@ -192,6 +198,7 @@
 			packageReferences = (
 				6950245D2D186E7E00EEF1EF /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
 				69CA88452D18777400C19E4D /* XCRemoteSwiftPackageReference "ios-places-sdk" */,
+				6911AF6A2D19D294002D48EA /* XCRemoteSwiftPackageReference "SVGKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 695024312D186C1A00EEF1EF /* Products */;
@@ -564,6 +571,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		6911AF6A2D19D294002D48EA /* XCRemoteSwiftPackageReference "SVGKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SVGKit/SVGKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 		6950245D2D186E7E00EEF1EF /* XCRemoteSwiftPackageReference "ios-maps-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/googlemaps/ios-maps-sdk";
@@ -583,6 +598,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6911AF6B2D19D294002D48EA /* SVGKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6911AF6A2D19D294002D48EA /* XCRemoteSwiftPackageReference "SVGKit" */;
+			productName = SVGKit;
+		};
+		6911AF6D2D19D294002D48EA /* SVGKitSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6911AF6A2D19D294002D48EA /* XCRemoteSwiftPackageReference "SVGKit" */;
+			productName = SVGKitSwift;
+		};
 		6950245E2D186E7E00EEF1EF /* GoogleMaps */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6950245D2D186E7E00EEF1EF /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
